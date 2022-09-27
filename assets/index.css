@@ -63,11 +63,27 @@ body {
         margin-right: 40px;
     }
 
-    .nav-logo a img {
-        /* Title */
-        height: 24px;
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 2px;
         margin-left: 40px;
         margin-right: 40px;
+    }
+
+    .nav-logo a {
+        /* Title */
+        font-family: 'Roboto Slab', serif;
+        font-weight: 900;
+        color: white;
+        text-decoration: none;
+        height: 24px;
+        margin-right: 6px;
+    }
+
+    .nav-logo div {
+        width: 6px;
+        height: 24px;
     }
 
     .nav-links {
@@ -165,18 +181,27 @@ body {
         color: white;
     }
 
-    .nav-logo a img {
-        /* Title */
-        height: 24px;
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 2px;
         margin-left: 40px;
         margin-right: 40px;
     }
 
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1em;
+    .nav-logo a {
+        /* Title */
+        font-family: 'Roboto Slab', serif;
+        font-weight: 900;
+        color: white;
+        text-decoration: none;
+        height: 24px;
+        margin-right: 6px;
+    }
+
+    .nav-logo div {
+        width: 6px;
+        height: 24px;
     }
 
     nav input {
@@ -523,7 +548,7 @@ footer p {
 }
 
 @media (max-width: 850px) {
-    footer a img {
+    footer .logo {
         display: none;
     }
 
@@ -533,7 +558,25 @@ footer p {
 }
 
 @media (min-width: 850px) {
-    footer a img {
+    footer .logo {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-right: 40px;
+    }
+
+    footer .logo a {
+        /* Title */
+        font-family: 'Roboto Slab', serif;
+        font-weight: 900;
+        color: white;
+        text-decoration: none;
+        height: 24px;
+        margin-right: 6px;
+    }
+
+    footer .logo div {
+        width: 6px;
         height: 24px;
     }
 }
