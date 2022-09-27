@@ -161,11 +161,15 @@ body {
     nav .left-items {
         /* Navigation bar div */
         display: none;
+        justify-content: center;
+        align-items: center;
     }
 
     nav .right-items {
         /* Navigation bar div */
         display: none;
+        justify-content: center;
+        align-items: center;
     }
 
     .dropbtn {
@@ -266,6 +270,8 @@ body {
     nav .right-items {
         /* Navigation bar div */
         display: none;
+        justify-content: center;
+        align-items: center;
     }
 
     .dropbtn {
@@ -306,6 +312,8 @@ body {
 
     .nav-links {
         display: block;
+        text-align: center;
+        width: 100%;
     }
 
     .nav-links * {
