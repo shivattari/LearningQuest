@@ -125,7 +125,7 @@ body {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 850px) and (min-width: 400px) {
     nav {
         /* Navigation bar */
         background-color: #1b1b1b;
@@ -211,6 +211,113 @@ body {
         font-size: 13px; /* Increase font-size */
         padding: 6px 6px 6px 40px; /* Add some padding */
         margin-left: 10px;
+        border: none; /* Remove borders */
+        border-radius: 10rem;
+        background-color: #3c3c3c;
+        color: white;
+        position: relative;
+        top: -2px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    nav input::placeholder {
+        color: rgb(187, 187, 187);
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        /* Navigation bar */
+        background-color: #1b1b1b;
+        border-bottom: thin solid white;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding: 20px 0 14px 0;
+        z-index: 10;
+    }
+
+    .vertical-nav {
+        flex-direction: column;
+    }
+
+    .vertical-nav-margin {
+        margin: 10px 40px;
+    }
+
+    .vertical-nav-margin-left {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav .short-collapsed {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .left-items {
+        /* Navigation bar div */
+        display: none;
+    }
+
+    nav .right-items {
+        /* Navigation bar div */
+        display: none;
+    }
+
+    .dropbtn {
+        height: 24px;
+        width: 24px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        margin-right: 40px;
+    }
+
+    .dropbtn svg {
+        color: white;
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .nav-logo a {
+        /* Title */
+        font-family: 'Roboto Slab', serif;
+        font-weight: 900;
+        color: white;
+        text-decoration: none;
+        height: 24px;
+        margin-right: 6px;
+    }
+
+    .nav-logo div {
+        width: 6px;
+        height: 24px;
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .nav-links * {
+        margin-top: 10px;
+    }
+
+    nav input {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44' fill='white' class='w-5 h-5'%3E%3Cpath fill-rule='evenodd' d='M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z' clip-rule='evenodd' /%3E%3C/svg%3E");
+        background-position: 10px 7px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        font-size: 13px; /* Increase font-size */
+        padding: 6px 6px 6px 40px; /* Add some padding */
         border: none; /* Remove borders */
         border-radius: 10rem;
         background-color: #3c3c3c;
