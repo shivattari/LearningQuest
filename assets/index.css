@@ -125,7 +125,7 @@ body {
     }
 }
 
-@media (max-width: 850px) and (min-width: 400px) {
+@media (max-width: 850px) and (min-width: 460px) {
     nav {
         /* Navigation bar */
         background-color: #1b1b1b;
@@ -229,7 +229,7 @@ body {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
     nav {
         /* Navigation bar */
         background-color: #1b1b1b;
